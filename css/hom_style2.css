@@ -74,7 +74,7 @@
 .datve-content {
     width: var(--content-width);
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around; 
 }
 .dat-ve {
     width: 100%;
@@ -96,6 +96,7 @@
     font-weight: bold;
     font-size: 20px;
     align-items: center;
+    cursor: pointer;
 }
 
 .dat-ve-item {
@@ -105,6 +106,7 @@
 
 .datve-item-sub:hover {
     background-color: var(--secondary-blue);
+    color: #0b2447;
 }
 
 .sub-menu-1 {
@@ -212,7 +214,6 @@
     padding: 50px;
     background-color: rgb(25, 55, 109);
     transform: translateY(-150px);
-    width: inherit;
     margin-top: 150px;
 }
 .head-title {
@@ -408,3 +409,33 @@ main {
 .danh-gia-phim-item .title {
     padding-top: 0;
 }
+
+.submit {
+    height: 57px;
+    font-size: 30px;
+    background-color: #0B2447;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    width: inherit;
+}
+
+.submit button {
+    margin-left: 810px;
+    height: 57px;
+    width: 300px;
+    font-size: 30px;
+    background-color: #0B2447;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+}
+
+.submit button:hover {
+    background-color: #ffc436;
+    color: black;
+}
+

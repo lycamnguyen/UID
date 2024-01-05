@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Sea Cat | Trang Chủ</title>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -11,8 +11,24 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
         <link rel="stylesheet" href="css/header-footer.css" />
+        <!-- <link rel="stylesheet" href="home_style.css" /> -->
+        <link rel="stylesheet" href="css/hom_style2.css" />
         <link rel="stylesheet" href="css/film.css" />
+        <link rel="stylesheet" href="css/danhgiaphim.css" />
+        <style>
+            .slick-prev {
+                background-image: url(images/bubble.png);
+            }
+            .slick-next {
+                background-image: url(images/bubble-2.png);
+            }
+        </style>
     </head>
     <body>
         <a id="myBtn" onclick="topFunction()" title="Lên đầu trang"><img src="/images/bubble - Copy.png" alt=""></a>
@@ -37,11 +53,16 @@
                                 <img src="images/VN-flag.png" alt="" />
                             </div>
                         </div>
-                        <div class="login">
-                            <div class="dangky">đăng ký thành viên</div>
-                            <div class="dangnhap">
-                                <i class="fa-solid fa-user"></i>
-                                đăng nhập
+                        <div class="account">
+                            <div class="login">
+                                <div class="dangky">đăng ký thành viên</div>
+                                <div class="dangnhap">
+                                    <i class="fa-solid fa-user"></i>
+                                    đăng nhập
+                                </div>
+                            </div>
+                            <div class="acc">
+                                <img src="images/acc.png" alt="" />
                             </div>
                         </div>
                     </div>
@@ -49,9 +70,7 @@
                         <li class="menu-item">
                             <a href="index.html">trang chủ</a>
                         </li>
-                        <li class="menu-item active">
-                            <a href="film.html">phim</a>
-                        </li>
+                        <li class="menu-item"><a href="film.html">phim</a></li>
                         <li class="menu-item">
                             <a href="lichchieu.html">lịch chiếu</a>
                         </li>
@@ -81,9 +100,7 @@
                     <li class="menu-item">
                         <a href="index.html">trang chủ</a>
                     </li>
-                    <li class="menu-item active">
-                        <a href="film.html">phim</a>
-                    </li>
+                    <li class="menu-item"><a href="film.html">phim</a></li>
                     <li class="menu-item">
                         <a href="lichchieu.html">lịch chiếu</a>
                     </li>
@@ -109,20 +126,7 @@
             </div>
         </header>
         <main>
-            <div class="container">
-                <div class="head-title">
-                    <div class="head-title-item phimdangchieu">
-                        <p>phim đang chiếu</p>
-                    </div>
-                    <div class="head-title-item phimsapchieu active">
-                        <p>phim sắp chiếu</p>
-                    </div>
-                    <div class="head-title-item suatchieudb">
-                        <p>suất chiếu đặc biệt</p>
-                    </div>
-                </div>
-                <div class="film-grid"></div>
-            </div>
+
         </main>
         <footer>
             <div class="up-footer">
@@ -175,7 +179,7 @@
                         <h3>NHẬN THÔNG BÁO</h3>
                         <p>Nhận thông báo mới nhất từ chúng tôi</p>
                         <div class="opinion-box">
-                            <input id="gopy" type="text" placeholder="Nhập email" />
+                            <input id="gopy1" type="text" placeholder="Nhập email" />
                             <button id="gopy-btm1">Gửi</button>
                         </div>
                     </div>
@@ -194,8 +198,19 @@
             </div>
         </footer>
 
-        <script src="js/film.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script src="js/homeindex.js"></script>
         <script src="js/header-footer.js"></script>
     </body>
 </html>

@@ -58,5 +58,8 @@ const redirectUserIfChoseAll = () => {
     const isFull = [...document.querySelectorAll('.picker')].every(
         (el) => el.dataset.choice != undefined
     )
-    if (isFull) window.location.href = 'muave-book.html'
+    const submitButton = document.getElementById('submitbtn');
+    if (isFull) submitButton.addEventListener('click', () => {
+        window.location.href = 'muave-book.html';
+    });
 }

@@ -4,6 +4,7 @@ body {
     margin: 0;
     color: white;
 }
+
 :root {
     --content-width: 1200px;
     --primary-blue: #0b2447;

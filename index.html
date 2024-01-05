@@ -31,6 +31,7 @@
         </style>
     </head>
     <body>
+        <a id="myBtn" onclick="topFunction()" title="Lên đầu trang"><img src="/images/bubble - Copy.png" alt=""></a>
         <header>
             <nav>
                 <div class="logo">
@@ -52,11 +53,16 @@
                                 <img src="images/VN-flag.png" alt="" />
                             </div>
                         </div>
-                        <div class="login">
-                            <div class="dangky">đăng ký thành viên</div>
-                            <div class="dangnhap">
-                                <i class="fa-solid fa-user"></i>
-                                đăng nhập
+                        <div class="account">
+                            <div class="login">
+                                <div class="dangky">đăng ký thành viên</div>
+                                <div class="dangnhap">
+                                    <i class="fa-solid fa-user"></i>
+                                    đăng nhập
+                                </div>
+                            </div>
+                            <div class="acc">
+                                <a href="account.html"><img src="images/acc2.png" alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -212,6 +218,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="submit">
+                <button id="submitbtnhome">ĐẶT VÉ</button>
             </div>
             <!-- ----------------------- -->
             <div class="head-title">
@@ -517,12 +526,20 @@
                         Giờ làm việc: 8h00-22h00 tất cả các ngày trong tuần <br>
                         Email: contact@seacat.com
                     </p>
+                    <div class="ykien-footer">
+                        <h3>ĐỂ LẠI GÓP Ý</h3>
+                        <p>Ý kiến và thông tin của bạn sẽ được bảo mật</p>
+                        <div class="opinion-box">
+                            <input id="gopy" type="text" placeholder="Góp ý..." />
+                            <button id="gopy-btm">Gửi</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="up-footer-content-box">
                     <h3>KẾT NỐI VỚI CHÚNG TÔI</h3>
                     <p>
-                        <a href="https://www.facebook.com/"><img src="./images/fbft.png" alt=""></a>
-                        <a href="https://www.youtube.com/"><img src="./images/yt.png" alt=""></a>
+                        <a id="fb" href="https://www.facebook.com/"><img src="./images/fbft.png" alt=""></a>
+                        <a id="yt" href="https://www.youtube.com/"><img src="./images/yt.png" alt=""></a>
                     </p>
                     <h3>ỨNG DỤNG</h3>
                     <p>
@@ -547,7 +564,14 @@
                         <a href="">Liên Hệ</a> <br>
                         <a href="">Tuyển Dụng</a>
                     </p>
-                    <img src="/images/dknt-ft.png" alt="">
+                    <div class="ykien-footer">
+                        <h3>NHẬN THÔNG BÁO</h3>
+                        <p>Nhận thông báo mới nhất từ chúng tôi</p>
+                        <div class="opinion-box">
+                            <input id="gopy1" type="text" placeholder="Nhập email" />
+                            <button id="gopy-btm1">Gửi</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="down-footer-content-box">

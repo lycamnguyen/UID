@@ -156,3 +156,4 @@ btnSuatChieuDB.addEventListener('click', () => {
 })
 
 btnPhimDangChieu.click()
+

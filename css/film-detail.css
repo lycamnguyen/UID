@@ -27,7 +27,6 @@ body {
 }
 header,
 main,
-footer,
 .banner-wrapper {
     width: 100%;
 }
@@ -233,6 +232,18 @@ hr {
     background-color: transparent;
     border: 2px solid var(--secondary-blue);
 }
+
+.box-banvengay button:hover {
+    background-color: var(--secondary-blue);
+    border: 2px solid var(--secondary-blue);
+    color: #0b2447;
+    cursor: pointer;
+}
+
+.box-banvengay button a:hover {
+    color: #0b2447;
+}
+
 .box-banvengay button a {
     text-decoration: none;
     color: var(--secondary-blue);

@@ -11,6 +11,11 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
         sans-serif;
+    background-image: url(/images/body14.png);
+    background-repeat: repeat-y;
+    background-position-y: top;
+    background-position-x: center;
+
 }
 header {
     display: flex;
@@ -23,10 +28,13 @@ header {
 }
 
 main {
-    background-image: url(/images/main.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(/images/main4.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    width: inherit;
 }
+
 .nav-menu-wrapper {
     display: none;
     justify-content: center;
@@ -85,7 +93,7 @@ footer > div {
     background-color: white;
 }
 .search-bar input {
-    min-width: 200px;
+    width: 300px;
     display: block;
     border: none;
     outline: none;
@@ -261,17 +269,19 @@ footer a {
 
 .up-footer {
     width: inherit;
-    background-image: url(/images/ft2.jpg);
+    background-image: url(/images/ft1.png);
     background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
     display: flex;
     color: white;
-    top: 0;
-    padding: 10px 100px 20px 100px;
+    padding: 0px 100px 20px 100px;
 }
 
 .up-footer-content-box {
-    gap: 20px;
     width: 300px;
+    padding: 100px 0 0 0;
+    margin-top: -40px;
 }
 
 .up-footer-content-box h3 {
@@ -282,7 +292,6 @@ footer a {
 }
 
 .up-footer-content-box p {
-    gap: 20px;
     font-size: larger;
 }
 
@@ -290,15 +299,11 @@ footer a {
     color: #aac5e7;
 }
 
-.up-footer-content-box img:hover {
-    box-shadow: #0B2447 5px 5px 5px;
-}
-
 .down-footer-content-box {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 10px 200px 0 200px;
+    width: inherit;
 }
 
 .logo-footer img {
@@ -316,19 +321,35 @@ footer a {
 .seacat-footer {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    width: inherit;
 }
+
+.ykien-footer p {
+    margin-top: 0;
+}
+
 #gopy {
-    width: 300px;
-    height: 30px;
-    border-radius: 20px;
+    width: 278px;
+    height: 40px;
+    border: 0;
     padding: 0 12px;
     font-size: 16px;
+    background: none;
+    color: white;
 }
+
+#gopy1 {
+    width: 278px;
+    height: 40px;
+    border: 0;
+    padding: 0 12px;
+    font-size: 16px;
+    background: none;
+    color: white;
+}
+
 #gopy-btm {
-    margin-top: 20px;
-    height: 35px;
-    width: 100px;
+    height: 30px;
     caret-color: var(--secondary-blue);
     background-color: var(--secondary-blue);
     border: none;
@@ -336,4 +357,69 @@ footer a {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    margin: 5px 5px 0 0;
+}
+
+#gopy-btm:hover {
+    background-color: #ffc436;
+}
+
+#gopy-btm1 {
+    height: 30px;
+    caret-color: var(--secondary-blue);
+    background-color: var(--secondary-blue);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px 5px 0 0;
+}
+
+#gopy-btm1:hover {
+    background-color: #ffc436;
+}
+
+.opinion-box {
+    display: flex;
+    border: 1px solid #7eb9e3;
+    color: white;
+}
+
+#gopy input {
+    color: white;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#myBtn img {
+    width: 70px;
+}
+
+.account {
+    display: flex;
+    gap: 30px;
+}
+
+.acc {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: -20px;
 }

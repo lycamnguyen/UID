@@ -69,7 +69,15 @@ main {
 .head-title {
     display: flex;
     transform: translateY(15px);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    cursor: pointer;
 }
+
 .head-title-item {
     padding: 0 8px;
     background-color: var(--fifth-blue);
