@@ -38,14 +38,14 @@ function topFunction() {
 
 $(document).ready(function() {
   $(document).on("click", "#gopy-btm", function() {
-    alert("Cảm ơn quý khách đã góp ý cho dịch vụ của chúng tôi\nChúc quý khách có những trải nghiệm tuyệt vời tại SEACAT!");
+    alert("Cảm ơn quý khách đã góp ý cho dịch vụ của chúng tôi.\nChúc quý khách có những trải nghiệm tuyệt vời tại SEACAT!");
     $("#gopy").val("");
   })
 })
 
 $(document).ready(function() {
   $(document).on("click", "#gopy-btm1", function() {
-    alert("Cảm ơn quý khách đã đăng ký nhận thông báo mới từ chúng tôi");
+    alert("Cảm ơn quý khách đã đăng ký nhận thông báo mới từ chúng tôi!");
     $("#gopy1").val("");
   })
 })

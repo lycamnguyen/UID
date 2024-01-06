@@ -93,7 +93,7 @@ bookBtn.addEventListener('click', function () {
             singleSeats * SINGLE_SEAT_PRICE + coupleSeats * COUPLE_SEAT_PRICE
         )
         done_payment.addEventListener('click', function () {
-            alert('Mua vé thành công\nChúng tôi sẽ gửi thông tin vé đã đặt về email của quý khách\nXin quý khách vui lòng kiểm tra email')
+            alert('Mua vé thành công!\nChúng tôi sẽ gửi thông tin vé đã đặt về email của quý khách.\nXin quý khách vui lòng kiểm tra email!')
             container_booking.style.display = 'flex'
             payment.style.display = 'none'
             selectedSeats.forEach((seat) => seat.classList.add('booked'))

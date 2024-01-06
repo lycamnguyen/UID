@@ -13,6 +13,10 @@ main{
 
 }
 
+.form {
+    width: inherit;
+}
+
 .container-sign-up{
     width: var(--content-width);
     height: fit-content;
@@ -57,7 +61,6 @@ main{
 
 .content-sign-up{
     display: flex;
-    width: 1400px;
     height: fit-content;
     background-color: var(--secondary-blue);
     outline: 5px dashed var(--yellow);
@@ -127,6 +130,20 @@ label{
 }
 
 .button-dang-ky:hover {
+    background-color: var(--thirt-blue);
+    color: white; /* Thay đổi màu khi di chuột vào button */
+}
+
+.button-dang-nhap{
+    margin-top: 20px;
+    width: 90%;
+    height: 50px;
+    background-color: var(--yellow);
+    border: none;
+    
+}
+
+.button-dang-nhap:hover {
     background-color: var(--thirt-blue);
     color: white; /* Thay đổi màu khi di chuột vào button */
 }
