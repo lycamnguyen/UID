@@ -13,26 +13,27 @@
 
 .submit {
     height: 57px;
-    font-size: 30px;
     background-color: #0B2447;
     border: 0;
     color: white;
     font-weight: bold;
+    margin-left: 120px;
 }
 
 .submit button {
-    margin-left: 810px;
+    margin-left: 1000px;
     height: 57px;
-    width: 300px;
+    width: 200px;
     font-size: 30px;
     background-color: #0B2447;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    color: white;
-    font-weight: bold;
+    color: #ffc436;
     border: 0;
     cursor: pointer;
+    border: solid 2px #ffc436;
+    font-size: 28px;
+    border-radius: 2px;
 }
+
 
 .submit button:hover {
     background-color: #ffc436;
