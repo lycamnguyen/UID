@@ -404,6 +404,7 @@ footer a {
 
 #myBtn img {
     width: 70px;
+    z-index: 9999;
 }
 
 .account {
