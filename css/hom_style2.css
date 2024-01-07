@@ -411,6 +411,7 @@ main {
 }
 
 .submit {
+    width: inherit;
     height: 57px;
     background-color: #0B2447;
     border: 0;
