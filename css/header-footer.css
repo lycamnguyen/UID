@@ -4,6 +4,9 @@
     --secondary-blue: #7eb9e3;
     --yellow: #ffc436;
 }
+*{
+    scroll-behavior: smooth;
+}
 body {
     padding: 0;
     margin: 0;
