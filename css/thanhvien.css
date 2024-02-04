@@ -1,9 +1,87 @@
 ﻿.dangkytv {
-    width: 300px;
+  width: 300px;
+  margin-left: 15px;
+  margin-top: 60px;
+  height: 140px;
+  position: absolute;
+  display: flex;
+  transform: rotate(-30deg);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  justify-content: center;
+}
+/* -- pc --*/
+@media screen and (min-width: 64em) and (max-width: 73.124em) {
+  .container,
+  .film-grid {
+    width: inherit;
+  }
+
+  .dangkytv {
+    width: 100%;
     margin-left: 15px;
     margin-top: 60px;
-    height: 140px;
+    height: 10%;
     position: absolute;
-    display: flex;
+    display: none;
     transform: rotate(-30deg);
+  }
+}
+
+/* -- tablet -- */
+@media screen and (min-width: 59.025em) and (max-width: 63.99em) {
+  .container,
+  .film-grid {
+    width: inherit;
+
+    .dangkytv {
+      width: 100%;
+      margin-left: 15px;
+      margin-top: 60px;
+      height: 10%;
+      position: absolute;
+      display: none;
+      transform: rotate(-30deg);
+    }
+  }
+}
+
+@media screen and (min-width: 46.25em) and (max-width: 59em) {
+  .container,
+  .film-grid {
+    width: inherit;
+  }
+
+  .dangkytv {
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 60px;
+    height: 10%;
+    position: absolute;
+    display: none;
+    transform: rotate(-30deg);
+  }
+}
+
+/* -- mobile --*/
+@media screen and (max-width: 46.24em) {
+  .container,
+  .film-grid {
+    width: inherit;
+  }
+
+  .dangkytv {
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 60px;
+    height: 10%;
+    position: absolute;
+    display: none;
+    transform: rotate(-30deg);
+  }
 }
