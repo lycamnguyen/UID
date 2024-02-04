@@ -8,6 +8,7 @@
   width: 130px;
   height: 130px;
 }
+<<<<<<< HEAD
 .datve-content {
   padding: 30px 0 0 0;
 }
@@ -24,6 +25,33 @@
   border: solid 2px #ffc436;
   font-size: 28px;
   border-radius: 2px;
+=======
+.datve-content{
+    padding: 30px 0 30px 0;
+}
+
+.submit {
+    height: 57px;
+    background-color: #0B2447;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    width: inherit;
+}
+
+.submit button {
+    margin-left: 1050px;
+    height: 57px;
+    width: 200px;
+    font-size: 30px;
+    background-color: #0B2447;
+    color: #ffc436;
+    border: 0;
+    cursor: pointer;
+    border: solid 2px #ffc436;
+    font-size: 28px;
+    border-radius: 2px;
+>>>>>>> a1c55b5d73433a447a64d774602d2526fd9eabde
 }
 
 .submit button:hover {
