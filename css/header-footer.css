@@ -292,6 +292,10 @@ footer > div {
   color: var(--secondary-blue);
 }
 
+.list.active {
+  color: var(--yellow);
+}
+
 .side-nav {
   height: 100%;
   width: 0;
@@ -470,6 +474,10 @@ footer a {
 
 #myBtn img {
   width: 70px;
+}
+
+.active {
+  color: var(--yellow);
 }
 
 /* -- pc -- */

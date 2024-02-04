@@ -894,7 +894,7 @@ main {
 
   .khung-khuyen-mai {
     width: 84%;
-    height: 200px;
+    height: 270px;
     padding: 20px;
     background-color: var(--primary-blue);
     align-items: center;
@@ -902,7 +902,7 @@ main {
   }
 
   .khuyen-mai img {
-    width: 200px;
+    width: 300px;
     height: auto;
   }
 
@@ -1102,7 +1102,7 @@ main {
 
   .khung-khuyen-mai {
     width: 84%;
-    height: 150px;
+    height: 270px;
     padding: 20px;
     background-color: var(--primary-blue);
     align-items: center;
@@ -1130,7 +1130,7 @@ main {
   }
 
   .khuyen-mai img {
-    width: 200px;
+    width: 300px;
     height: auto;
   }
 

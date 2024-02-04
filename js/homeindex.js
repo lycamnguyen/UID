@@ -36,6 +36,15 @@ $(document).ready(function () {
     speed: 1000,
     dots: true,
   });
+  $(window).on("resize", function () {
+    if ($(window).width() <= 426) {
+      $(".khuyen-mai").slick("slickSetOption", "slidesToShow", 1, true);
+    } else if ($(window).width() <= 768) {
+      $(".khuyen-mai").slick("slickSetOption", "slidesToShow", 2, true);
+    } else if ($(window).width() <= 1024) {
+      $(".khuyen-mai").slick("slickSetOption", "slidesToShow", 3, true);
+    }
+  });
 });
 
 const listItems_chonphim = document.querySelectorAll(".dat-ve-01 li");

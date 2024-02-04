@@ -1,125 +1,293 @@
 body {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
 
 :root {
-    --content-width: 1200px;
-    --primary-blue: #0b2447;
-    --secondary-blue: #7eb9e3;
-    --fourth-blue: #aac5e7;
-    --yellow: #ffc436;
-    --third-blue: #627091;
-    --fifth-blue: #337ccf;
-    --gray-letter: #a5a7ae;
+  --content-width: 1200px;
+  --primary-blue: #0b2447;
+  --secondary-blue: #7eb9e3;
+  --fourth-blue: #aac5e7;
+  --yellow: #ffc436;
+  --third-blue: #627091;
+  --fifth-blue: #337ccf;
+  --gray-letter: #a5a7ae;
 }
 .container {
-    display: flex;
-    background-color: #0c182d;
-    justify-content: center;
-    padding-bottom: 60px;
+  display: flex;
+  background-color: #0c182d;
+  justify-content: center;
+  padding-bottom: 60px;
 }
 .container-content {
-    width: var(--content-width);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: var(--content-width);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .element-item {
-    font-weight: bold;
+  font-weight: bold;
 }
 .phimTime {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .lichPhim-info-icon {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 h2,
 .title-upercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .today-item-lich-wrapper {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 .lichPhim-item {
-    display: flex;
-    gap: 20px;
-    background-color: #4d628d;
-    padding: 20px;
-    height: 330px;
-    border-radius: 5px;
-    position: relative;
+  display: flex;
+  gap: 20px;
+  background-color: #4d628d;
+  padding: 20px;
+  height: 330px;
+  border-radius: 5px;
+  position: relative;
 }
 .film-poster {
-    max-height: 300px;
-    max-width: 220px;
+  max-height: 300px;
+  max-width: 220px;
 }
 .film-poster img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .lichPhim-container {
-    display: flex;
-    background-color: none;
-    border: 2px dashed var(--yellow);
-    padding: 40px;
-    border-radius: 5px;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  background-color: none;
+  border: 2px dashed var(--yellow);
+  padding: 40px;
+  border-radius: 5px;
+  flex-direction: column;
+  gap: 30px;
 }
 .lichPhim-info {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-color: #aac5e7;
-    border-radius: 5px;
-    padding: 30px;
-    color: black;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #aac5e7;
+  border-radius: 5px;
+  padding: 30px;
+  color: black;
+  width: 100%;
 }
 .title-upercase {
-    color: #627091;
+  color: #627091;
 }
 .today-item-lich,
 .tomorrow-item-lich,
 .dayAfter-tmr-item-lich {
-    background-color: whitesmoke;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 110px;
-    padding-bottom: 2px;
-    cursor: pointer;
+  background-color: whitesmoke;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 110px;
+  padding-bottom: 2px;
+  cursor: pointer;
 }
 .today-item-lich.active,
 .tomorrow-item-lich.active,
 .dayAfter-tmr-item-lich.active {
-    background-color: #aac5e7;
+  background-color: #aac5e7;
 }
 .today-item-lich.active .Thu {
-    background-color: #4d628d;
-    color: white;
-    box-sizing: border-box;
+  background-color: #4d628d;
+  color: white;
+  box-sizing: border-box;
 }
 .Thu {
-    width: 100%;
-    padding: 8px;
-    text-align: center;
+  width: 100%;
+  padding: 8px;
+  text-align: center;
 }
 .Ngay {
-    font-size: 45px;
-    line-height: 45px;
+  font-size: 45px;
+  line-height: 45px;
 }
 .age {
+  background-color: black;
+  color: var(--yellow);
+  width: 50px;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 110px;
+  box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.9);
+}
+.ngaychieu {
+  background-color: #627091;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 45px;
+  box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.9);
+  line-height: 20px;
+}
+hr {
+  width: 30px;
+}
+.ngaychieu-ngay {
+  font-size: 22px;
+}
+.phimTime-item.passed {
+  height: 30px;
+  width: 60px;
+  background-color: black;
+  border-color: #4d628d;
+  color: #4d628d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: not-allowed;
+}
+.phimTime-item {
+  height: 30px;
+  width: 60px;
+  background-color: #4d628d;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+.phimTime-item a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 64em) and (max-width: 73.124em) {
+  .lichPhim-item {
+    display: flex;
+    gap: 20px;
+    background-color: #4d628d;
+    padding: 1%;
+    height: max-content;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .lichPhim-container {
+    display: flex;
+    background-color: none;
+    border: 2px dashed var(--yellow);
+    padding: 1%;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 30px;
+    width: 97%;
+  }
+
+  .lichPhim-info {
+    display: flex;
+    gap: 30px;
+    background-color: #aac5e7;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    width: 80%;
+  }
+}
+
+/* -- tablet -- */
+@media screen and (min-width: 59.025em) and (max-width: 63.99em) {
+  .lichPhim-container {
+    display: flex;
+    background-color: none;
+    border: 2px dashed var(--yellow);
+    padding: 1%;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 30px;
+    width: 97%;
+  }
+
+  .lichPhim-info {
+    display: flex;
+    gap: 30px;
+    background-color: #aac5e7;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 46.25em) and (max-width: 59em) {
+  .container-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .lichPhim-item {
+    display: flex;
+    gap: 10px;
+    background-color: #4d628d;
+    padding: 1%;
+    border-radius: 5px;
+    position: relative;
+    width: inherit;
+  }
+
+  .lichPhim-container {
+    display: flex;
+    background-color: none;
+    border: 2px dashed var(--yellow);
+    padding: 1%;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 30px;
+    width: 97%;
+  }
+
+  .lichPhim-info {
+    display: flex;
+    gap: 30px;
+    background-color: #aac5e7;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    width: 70%;
+  }
+
+  .phimTime {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .age {
     background-color: black;
     color: var(--yellow);
     width: 50px;
@@ -127,12 +295,13 @@ h2,
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    right: 110px;
     box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.9);
-}
-.ngaychieu {
+    right: 11%;
+    top: 0;
+    font-size: 12px;
+  }
+
+  .ngaychieu {
     background-color: #627091;
     color: white;
     display: flex;
@@ -142,43 +311,138 @@ h2,
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    right: 45px;
     box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.9);
     line-height: 20px;
+    right: 1%;
+    top: 0;
+    font-size: 12px;
+  }
+
+  .film-title {
+    padding-left: 0;
+    padding-right: 30%;
+    font-size: 12px;
+  }
 }
-hr {
-    width: 30px;
-}
-.ngaychieu-ngay {
-    font-size: 22px;
-}
-.phimTime-item.passed {
-    height: 30px;
-    width: 60px;
-    background-color: black;
-    border-color: #4d628d;
-    color: #4d628d;
+
+/* -- mobile --*/
+@media screen and (max-width: 46.24em) {
+  .container-content {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    cursor: not-allowed;
-}
-.phimTime-item {
-    height: 30px;
-    width: 60px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h2,
+  .title-upercase {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+
+  .today-item-lich-wrapper {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    height: auto;
+    font-size: 12px;
+  }
+
+  .lichPhim-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: #4d628d;
-    color: white;
+    padding: 1%;
+    height: max-content;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .film-poster {
+    max-height: 50px;
+    max-width: 100px;
+    z-index: 1;
+  }
+
+  .film-poster img {
+    max-width: 100%;
+  }
+
+  .lichPhim-container {
+    display: flex;
+    background-color: none;
+    border: 2px dashed var(--yellow);
+    padding: 1%;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 30px;
+    width: 97%;
+  }
+
+  .lichPhim-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #aac5e7;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+    width: 95%;
+    margin-top: -20%;
+  }
+
+  .phimTime {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+  }
+
+  .lichPhim-info-icon {
+    margin-top: 20%;
+    display: flex;
+    gap: 10px;
+  }
+
+  .age {
+    background-color: black;
+    color: var(--yellow);
+    width: 30px;
+    min-height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 6px;
-    cursor: pointer;
-    border: 3px solid transparent;
-}
-.phimTime-item a {
-    text-decoration: none;
+    box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.9);
+    right: 11%;
+    top: 0;
+    font-size: 12px;
+  }
+  .ngaychieu {
+    background-color: #627091;
     color: white;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -1px 3px 4px rgba(0, 0, 0, 0.9);
+    line-height: 20px;
+    right: 1%;
+    top: 0;
+    font-size: 12px;
+  }
+
+  .film-title {
+    padding-left: 30%;
+    padding-right: 20%;
+    font-size: 12px;
+  }
+
+  .title-upercase {
+    display: none;
+  }
 }

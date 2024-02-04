@@ -214,181 +214,61 @@ main {
 }
 
 /* -- pc --*/
-@media screen and (min-width: 73.125em) and (max-width: 77.875em) {
-  .head-title {
-    display: flex;
-    transform: translateY(15px);
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    margin-top: 30px;
-    cursor: pointer;
-  }
-
-  .head-title-item {
-    padding: 0 8px;
-    background-color: var(--fifth-blue);
-    width: 100px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    position: relative;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 9px;
-    transform: skew(-15deg);
-  }
-
-  .head-title-item p {
-  }
-
-  .head-title2 {
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: -70px;
-  }
-}
-
 @media screen and (min-width: 64em) and (max-width: 73.124em) {
-  .head-title {
-    display: flex;
-    transform: translateY(15px);
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    margin-top: 30px;
-    cursor: pointer;
-  }
-
-  .head-title-item {
-    padding: 0 8px;
-    background-color: var(--fifth-blue);
-    width: 100px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    position: relative;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 15px;
-    transform: skew(-15deg);
-  }
-
-  .head-title-item p {
-  }
-
-  .head-title2 {
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: -70px;
+  .container,
+  .film-grid {
+    width: inherit;
   }
 }
 
 /* -- tablet -- */
 @media screen and (min-width: 59.025em) and (max-width: 63.99em) {
-  .head-title {
-    display: flex;
-    transform: translateY(15px);
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    margin-top: 30px;
-    cursor: pointer;
-  }
-
-  .head-title-item {
-    padding: 0 8px;
-    background-color: var(--fifth-blue);
-    width: 100px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    position: relative;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 15px;
-    transform: skew(-15deg);
-  }
-
-  .head-title-item p {
-  }
-
-  .head-title2 {
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: -70px;
+  .container,
+  .film-grid {
+    width: inherit;
   }
 }
 
 @media screen and (min-width: 46.25em) and (max-width: 59em) {
-  .head-title {
-    display: flex;
-    transform: translateY(15px);
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
-    margin-top: 30px;
-    cursor: pointer;
+  .container,
+  .film-grid {
+    width: inherit;
   }
 
-  .head-title-item {
-    padding: 0 8px;
-    background-color: var(--fifth-blue);
-    width: 100px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    position: relative;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 15px;
-    transform: skew(-15deg);
-  }
-
-  .head-title-item p {
-  }
-
-  .head-title2 {
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: -70px;
+  .film-grid {
+    box-sizing: border-box;
+    background-color: rgb(11, 11, 11, 80%);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* column-gap: 20px; */
+    gap: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-size: 12px;
   }
 }
 
 /* -- mobile --*/
 @media screen and (max-width: 46.24em) {
+  .container,
+  .film-grid {
+    width: inherit;
+  }
+
+  .film-grid {
+    box-sizing: border-box;
+    background-color: rgb(11, 11, 11, 80%);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* column-gap: 20px; */
+    gap: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-size: 10px;
+  }
+
   .head-title {
     display: flex;
     transform: translateY(15px);
@@ -416,9 +296,6 @@ main {
     font-weight: 600;
     font-size: 9px;
     transform: skew(-15deg);
-  }
-
-  .head-title-item p {
   }
 
   .head-title2 {

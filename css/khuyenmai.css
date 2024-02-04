@@ -1,17 +1,111 @@
 :root {
-    --content-width: 1200px;
-    --primary-blue: #0b2447;
-    --secondary-blue: #7eb9e3;
-    --fourth-blue: #aac5e7;
-    --yellow: #ffc436;
-    --third-blue: #627091;
-    --fifth-blue: #337ccf;
+  --content-width: 1200px;
+  --primary-blue: #0b2447;
+  --secondary-blue: #7eb9e3;
+  --fourth-blue: #aac5e7;
+  --yellow: #ffc436;
+  --third-blue: #627091;
+  --fifth-blue: #337ccf;
 }
 body {
-    color: black;
+  color: black;
 }
+
 .Sukien {
-    width: 75%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-blue);
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.Event {
+  display: flex;
+  justify-content: center;
+  padding-left: 50px;
+}
+.KhungVangEvent {
+  border: 3px dashed var(--yellow);
+  transform: translateX(-60px);
+}
+.event-img {
+  z-index: 2;
+}
+.event-img img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.Event_Content {
+  background-color: var(--fourth-blue);
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+.SukienTitle {
+  color: white;
+  font-size: 35px;
+}
+.phimdangchieu-title {
+  color: white;
+  text-transform: uppercase;
+}
+.phimdangchieu {
+  display: flex;
+  margin-left: 0;
+  flex-direction: column;
+  gap: 30px;
+}
+.phimdangchieu-poster {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+}
+main {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  width: var(--content-width);
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.xemthem {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.xemthem a {
+  color: white;
+}
+
+.film-rcm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* -- pc -- */
+@media screen and (min-width: 73.125em) {
+}
+
+@media screen and (min-width: 64em) and (max-width: 73.124em) {
+}
+
+/* -- tablet -- */
+@media screen and (min-width: 59.0625em) and (max-width: 63.99em) {
+}
+
+@media screen and (min-width: 46.25em) and (max-width: 59em) {
+  .Sukien {
+    width: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,68 +113,133 @@ body {
     flex-direction: column;
     gap: 30px;
     padding-bottom: 30px;
-}
+  }
 
-.Event {
+  .Event {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-}
-.KhungVangEvent {
+    padding-left: 0;
+  }
+
+  .KhungVangEvent {
     border: 3px dashed var(--yellow);
-    transform: translateX(-60px);
-}
-.event-img {
-    z-index: 2;
-}
-.event-img img {
+    transform: translateX(0);
+  }
+
+  .Event_Content {
+    background-color: var(--fourth-blue);
+    width: inherit;
+    height: auto;
+    padding: 0;
+  }
+
+  .event-img img {
     display: block;
     object-fit: cover;
     object-position: center;
-}
-.Event_Content {
-    background-color: var(--fourth-blue);
-    padding-left: 80px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-}
-.SukienTitle {
-    color: white;
-    font-size: 35px;
-}
-.phimdangchieu-title {
-    color: white;
-    text-transform: uppercase;
-}
-.phimdangchieu {
+    width: 100%;
+  }
+
+  .container {
     display: flex;
-    margin-left: 0;
     flex-direction: column;
-    gap: 30px;
-}
-.phimdangchieu-poster {
-    width: 220px;
-    height: 300px;
-    object-fit: cover;
-}
-main {
-    display: flex;
-    justify-content: center;
-}
-.container {
-    display: flex;
-    width: var(--content-width);
+    width: inherit;
     gap: 20px;
     justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+
+  .phimdangchieu {
+    text-align: center;
+    display: flex;
+    margin-left: 0;
+    gap: 10px;
+  }
+  .phimdangchieu-poster {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .phimdangchieu-poster {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .film-rcm {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
 }
-.xemthem {
+
+/* -- mobile --*/
+@media screen and (max-width: 46.24em) {
+  .Sukien {
+    width: inherit;
     display: flex;
     justify-content: center;
-    color: white;
-}
-.xemthem a {
-    color: white;
+    align-items: center;
+    background-color: var(--primary-blue);
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  .Event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .KhungVangEvent {
+    border: 3px dashed var(--yellow);
+    transform: translateX(0);
+  }
+
+  .Event_Content {
+    background-color: var(--fourth-blue);
+    width: inherit;
+    height: auto;
+    padding: 0;
+  }
+
+  .event-img img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .phimdangchieu {
+    text-align: center;
+    display: flex;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .phimdangchieu-poster {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .film-rcm {
+    display: flex;
+    flex-direction: row;
+  }
 }
