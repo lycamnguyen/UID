@@ -486,7 +486,7 @@ main {
   }
 
   .khuyen-mai img {
-    width: 300px;
+    width: inherit;
     height: auto;
   }
 
@@ -902,7 +902,7 @@ main {
   }
 
   .khuyen-mai img {
-    width: 300px;
+    width: inherit;
     height: auto;
   }
 
@@ -1130,7 +1130,7 @@ main {
   }
 
   .khuyen-mai img {
-    width: 300px;
+    width: inherit;
     height: auto;
   }
 
