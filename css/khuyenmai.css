@@ -12,7 +12,7 @@ body {
 }
 
 .Sukien {
-  width: 75%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,43 +104,6 @@ main {
 }
 
 @media screen and (min-width: 46.25em) and (max-width: 59em) {
-  .Sukien {
-    width: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-blue);
-    flex-direction: column;
-    gap: 30px;
-    padding-bottom: 30px;
-  }
-
-  .Event {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 0;
-  }
-
-  .KhungVangEvent {
-    border: 3px dashed var(--yellow);
-    transform: translateX(0);
-  }
-
-  .Event_Content {
-    background-color: var(--fourth-blue);
-    width: inherit;
-    height: auto;
-    padding: 0;
-  }
-
-  .event-img img {
-    display: block;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-  }
-
   .container {
     display: flex;
     flex-direction: column;
