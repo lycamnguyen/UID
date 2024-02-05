@@ -1555,7 +1555,7 @@ footer a {
     grid-template-columns: 1fr 1fr;
     gap: 0px;
     color: white;
-    padding: 0px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
   }
 
   .up-footer-content-box {

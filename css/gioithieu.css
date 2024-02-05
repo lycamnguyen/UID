@@ -449,3 +449,457 @@ main {
   font-weight: 500;
   font-size: 18px;
 }
+
+/* -- pc --*/
+@media screen and (min-width: 73.125em) and (max-width: 77.875em) {
+}
+
+@media screen and (min-width: 64em) and (max-width: 73.124em) {
+  .contentf {
+    color: #fff;
+    left: 0;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-top: 50px;
+  }
+
+  .foods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: inherit;
+  }
+  .Retanglef {
+    background-color: #0c2247;
+    width: inherit;
+    height: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    width: 95%;
+  }
+
+  .containerf {
+    border: 4px #ffc436 dotted;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    padding: 1%;
+    width: inherit;
+  }
+
+  .backgroundf {
+    width: 99%;
+    background: #aac5e7;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    padding: 1%;
+  }
+
+  #image81 {
+    width: 45%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+  #image82,
+  #image76 {
+    width: 80%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+  .containerf p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .services {
+    margin-top: 20px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Retangles {
+    background-color: #0c2247;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 5%;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+  }
+
+  .pic-services-wrapper img {
+    width: 100%;
+    border-radius: 5%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .techcinema {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    width: inherit;
+  }
+
+  .gacht {
+    transform: rotate(-0.016534678564769027deg);
+    width: 80%;
+    height: 0;
+    left: 0;
+    top: 105px;
+    border: 2px solid #fff;
+  }
+}
+
+/* -- tablet -- */
+@media screen and (min-width: 59.025em) and (max-width: 63.99em) {
+  .contentf {
+    color: #fff;
+    left: 0;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-top: 50px;
+  }
+
+  .foods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: inherit;
+  }
+  .Retanglef {
+    background-color: #0c2247;
+    width: inherit;
+    height: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    width: 95%;
+  }
+
+  .containerf {
+    border: 4px #ffc436 dotted;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    padding: 1%;
+    width: inherit;
+  }
+
+  .backgroundf {
+    width: 99%;
+    background: #aac5e7;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    padding: 1%;
+  }
+
+  #image81 {
+    width: 45%;
+    height: 45%;
+    border-radius: 10%;
+  }
+
+  #image82,
+  #image76 {
+    width: 80%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+  .containerf p {
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  .services {
+    margin-top: 20px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Retangles {
+    background-color: #0c2247;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 5%;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+  }
+
+  .pic-services-wrapper img {
+    width: 100%;
+    border-radius: 5%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .techcinema {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    width: inherit;
+  }
+
+  .gacht {
+    transform: rotate(-0.016534678564769027deg);
+    width: 80%;
+    height: 0;
+    left: 0;
+    top: 105px;
+    border: 2px solid #fff;
+  }
+}
+
+@media screen and (min-width: 46.25em) and (max-width: 59em) {
+  .contentf {
+    color: #fff;
+    left: 0;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-top: 50px;
+  }
+
+  .foods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: inherit;
+  }
+  .Retanglef {
+    background-color: #0c2247;
+    width: inherit;
+    height: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    width: 95%;
+  }
+
+  .containerf {
+    border: 4px #ffc436 dotted;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    padding: 1%;
+    width: inherit;
+  }
+
+  .backgroundf {
+    width: 99%;
+    background: #aac5e7;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    padding: 1%;
+    min-height: auto;
+    height: auto;
+  }
+
+  .pic-services-wrapper {
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  #image81 {
+    width: 50%;
+    height: 70%;
+    border-radius: 10%;
+  }
+
+  #image82,
+  #image76 {
+    width: 80%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+  .containerf p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .services {
+    margin-top: 20px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Retangles {
+    background-color: #0c2247;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 5%;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+  }
+
+  .pic-services-wrapper img {
+    width: 100%;
+    border-radius: 5%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .techcinema {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    width: inherit;
+  }
+
+  .gacht {
+    transform: rotate(-0.016534678564769027deg);
+    width: 80%;
+    height: 0;
+    left: 0;
+    top: 105px;
+    border: 2px solid #fff;
+  }
+}
+
+/* -- mobile --*/
+@media screen and (max-width: 46.24em) {
+  .contentf {
+    color: #fff;
+    left: 0;
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-top: 50px;
+  }
+
+  .foods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: inherit;
+  }
+  .Retanglef {
+    background-color: #0c2247;
+    width: inherit;
+    height: auto;
+    padding: 1%;
+    box-sizing: border-box;
+    width: 95%;
+  }
+
+  .containerf {
+    border: 4px #ffc436 dotted;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+    padding: 1%;
+    width: inherit;
+  }
+
+  .backgroundf {
+    width: 99%;
+    background: #aac5e7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1%;
+  }
+
+  #image81 {
+    width: 45%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+  #image82,
+  #image76 {
+    width: 80%;
+    height: auto;
+    border-radius: 10%;
+  }
+
+  .containerf p {
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .services {
+    margin-top: 20px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Retangles {
+    background-color: #0c2247;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 5%;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+  }
+
+  .pic-services-wrapper img {
+    width: 70%;
+    border-radius: 5%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .techcinema {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    width: inherit;
+  }
+
+  .gacht {
+    transform: rotate(-0.016534678564769027deg);
+    width: 80%;
+    height: 0;
+    left: 0;
+    top: 105px;
+    border: 2px solid #fff;
+  }
+}
