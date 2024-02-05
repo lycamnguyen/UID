@@ -1,117 +1,247 @@
 :root {
-    --content-width: 1200px;
-    --primary-blue: #0b2447;
-    --secondary-blue: #7eb9e3;
-    --fourth-blue: #aac5e7;
-    --yellow: #ffc436;
-    --third-blue: #627091;
-    --fifth-blue: #337ccf;
-    --gray-letter: #a5a7ae;
+  --content-width: 1200px;
+  --primary-blue: #0b2447;
+  --secondary-blue: #7eb9e3;
+  --fourth-blue: #aac5e7;
+  --yellow: #ffc436;
+  --third-blue: #627091;
+  --fifth-blue: #337ccf;
+  --gray-letter: #a5a7ae;
 }
 main {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .maintainer {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(237, 227, 227);
-    width: var(--content-width);
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(237, 227, 227);
+  width: var(--content-width);
+  border-radius: 5px;
 }
 .GroupVeImage {
-    display: flex;
-    color: #19376d;
-    font-size: 43px;
-    font-weight: bold;
+  display: flex;
+  color: #19376d;
+  font-size: 43px;
+  font-weight: bold;
 }
 .datve_khung {
-    width: 230px;
-    transform: translateY(-100px);
-
+  width: 230px;
+  transform: translateY(-100px);
 }
 .datve_khung img {
-    width: 100%;
-    
+  width: 100%;
 }
 
 #datve {
-    transform: translateX(-50px);
-    text-decoration: none;
-    margin-top: 40px;
-    color: #19376d;
+  transform: translateX(-50px);
+  text-decoration: none;
+  margin-top: 40px;
+  color: #19376d;
 }
 .button-giave {
-    display: flex;
-    gap: 25px;
-    color: white;
-    transform: translateY(20px);
+  display: flex;
+  gap: 25px;
+  color: white;
+  transform: translateY(20px);
 }
 .button-giave-item {
-    height: 60px;
-    width: 150px;
-    background-color: var(--fifth-blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    border-radius: 8px;
-    cursor: pointer;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
+  height: 60px;
+  width: 150px;
+  background-color: var(--fifth-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
 }
 .KhungVe2D,
 .KhungVe3D {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
 }
 .KhungVe2D {
-    display: none;
+  display: none;
 }
 .ghichu {
-    padding: 10px;
+  padding: 10px;
 }
 .button-2d {
-    position: relative;
+  position: relative;
 }
 .button-2d::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc(100% + 2px);
-    height: calc(100% + 0px);
-    width: 27px;
-    background-color: var(--fifth-blue);
-    transform: skew(-15deg) translateX(-20px);
-    /* z-index: -1; */
-    border-radius: 5px 5px 5px 5px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(100% + 2px);
+  height: calc(100% + 0px);
+  width: 27px;
+  background-color: var(--fifth-blue);
+  transform: skew(-15deg) translateX(-20px);
+  /* z-index: -1; */
+  border-radius: 5px 5px 5px 5px;
 }
 .button-3d {
-    position: relative;
+  position: relative;
 }
 .button-3d::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: calc(100% + 2px);
-    height: calc(100% + 0px);
-    width: 27px;
-    background-color: var(--fifth-blue);
-    transform: skew(-15deg) translateX(-160px);
-    /* z-index: -1; */
-    border-radius: 5px 5px 5px 5px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(100% + 2px);
+  height: calc(100% + 0px);
+  width: 27px;
+  background-color: var(--fifth-blue);
+  transform: skew(-15deg) translateX(-160px);
+  /* z-index: -1; */
+  border-radius: 5px 5px 5px 5px;
 }
 .button-giave-item.active,
 .button-giave-item.active::after,
 .button-giave-item:hover,
 .button-giave-item:hover::after {
-    background-color: var(--yellow);
-    color: black;
+  background-color: var(--yellow);
+  color: black;
+}
+
+/* -- pc --*/
+@media screen and (min-width: 73.125em) {
+  .maintainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 227, 227);
+    width: var(--content-width);
+    border-radius: 5px;
+    width: inherit;
+    gap: 60px;
+  }
+}
+
+@media screen and (min-width: 64em) and (max-width: 73.124em) {
+  .maintainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 227, 227);
+    width: var(--content-width);
+    border-radius: 5px;
+    width: inherit;
+    gap: 60px;
+  }
+
+  .KhungVe2D img,
+  .KhungVe3D img {
+    width: 100%;
+  }
+}
+
+/* -- tablet -- */
+@media screen and (min-width: 59.025em) and (max-width: 63.99em) {
+  .maintainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 227, 227);
+    width: var(--content-width);
+    border-radius: 5px;
+    width: inherit;
+    gap: 60px;
+  }
+
+  .datve_khung {
+    width: 230px;
+    transform: translateY(-50px);
+  }
+
+  .datve_khung img {
+    transform: translateX(20px);
+    width: 70%;
+  }
+
+  #datve {
+    transform: translateX(-60px);
+    text-decoration: none;
+    margin-top: 10px;
+    color: #19376d;
+    font-size: 30px;
+  }
+
+  .KhungVe2D img,
+  .KhungVe3D img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 46.25em) and (max-width: 59em) {
+  .maintainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 227, 227);
+    width: var(--content-width);
+    border-radius: 5px;
+    width: inherit;
+    gap: 60px;
+  }
+
+  .datve_khung {
+    width: 230px;
+    transform: translateY(-30px);
+  }
+
+  .datve_khung img {
+    transform: translateX(50px);
+    width: 30%;
+  }
+
+  #datve {
+    transform: translateX(-120px);
+    text-decoration: none;
+    margin-top: 10px;
+    color: #19376d;
+    font-size: 15px;
+  }
+
+  .KhungVe2D img,
+  .KhungVe3D img {
+    width: 100%;
+  }
+}
+
+/* -- mobile --*/
+@media screen and (max-width: 46.24em) {
+  .maintainer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(237, 227, 227);
+    width: var(--content-width);
+    border-radius: 5px;
+    width: inherit;
+    gap: 60px;
+  }
+
+  .datve_khung img {
+    width: 30%;
+    display: none;
+  }
+
+  #datve {
+    transform: translateX(-50px);
+    text-decoration: none;
+    margin-top: 40px;
+    color: #19376d;
+    font-size: 15px;
+  }
+
+  .KhungVe2D img,
+  .KhungVe3D img {
+    width: 100%;
+  }
 }
