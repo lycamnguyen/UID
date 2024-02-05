@@ -1179,7 +1179,6 @@ main {
     height: 100px;
   }
 
-<<<<<<< HEAD
   h1 {
     font-size: 15px;
   }
@@ -1189,22 +1188,6 @@ main {
     margin-left: 35%;
     margin-top: 20px;
     width: 100px;
-=======
-.submit {
-    padding: 10px;
-    width: inherit;
-    height: 57px;
-    background-color: #0B2447;
-    border: 0;
-    color: white;
-    font-weight: bold;
-}
-
-.submit button {
-    margin-left: 1070px;
-    height: 57px;
-    width: 200px;
->>>>>>> a1c55b5d73433a447a64d774602d2526fd9eabde
     font-size: 30px;
     background-color: #0b2447;
     color: #ffc436;
