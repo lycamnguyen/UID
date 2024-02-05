@@ -480,135 +480,6 @@ footer a {
   color: var(--yellow);
 }
 
-/* -- pc -- */
-@media screen and (min-width: 73.125em) {
-  .nav-menu-wrapper.sticky {
-    width: 100%;
-    display: flex;
-    margin-top: 0;
-    margin-left: 0;
-    color: white;
-    border-bottom: 2px solid white;
-    background-image: none;
-    position: fixed;
-    background-image: url("../images/background-header.jpg");
-    z-index: 999999;
-    padding: 0 50px 0 50px;
-  }
-  .nav-menu-wrapper.sticky ul {
-    width: inherit;
-    justify-content: center;
-  }
-
-  nav,
-  footer > div {
-    width: inherit;
-    padding-top: 10px;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  .nav-bar {
-    flex: 1;
-    width: inherit;
-  }
-
-  .nav-menu {
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: inherit;
-  }
-
-  .menu-item::after {
-    content: "";
-    display: none;
-    position: absolute;
-    top: 0;
-    height: calc(100% + 0px);
-    width: calc(100% + 15px);
-    background-color: var(--yellow);
-    transform: skew(-15deg);
-    z-index: -1;
-    border-radius: 0 2px 2px 0;
-  }
-
-  .up-footer {
-    width: inherit;
-    background-image: url("../images/ft1.png");
-    background-repeat: no-repeat;
-    background-position-y: top;
-    background-position-x: center;
-    display: flex;
-    color: white;
-    padding: 0px 20px 20px 20px;
-  }
-
-  .up-footer-content-box {
-    width: 270px;
-    padding: 100px 0 0 0;
-    margin-top: -40px;
-  }
-
-  .up-footer-content-box h3 {
-    text-align: center;
-    background-color: #337ccf83;
-    height: 30px;
-    font-size: 15px;
-  }
-
-  .up-footer-content-box p {
-    font-size: 15px;
-  }
-
-  #gopy {
-    width: 200px;
-    height: 40px;
-    border: 0;
-    padding: 0 12px;
-    font-size: 16px;
-    background: none;
-    color: white;
-  }
-
-  #gopy1 {
-    width: 200px;
-    height: 40px;
-    border: 0;
-    padding: 0 12px;
-    font-size: 16px;
-    background: none;
-    color: white;
-  }
-
-  /* #gopy-btm {
-    height: 30px;
-    caret-color: var(--secondary-blue);
-    background-color: var(--secondary-blue);
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 5px 5px 0 -40px;
-  }
-
-  #gopy-btm1 {
-    height: 30px;
-    caret-color: var(--secondary-blue);
-    background-color: var(--secondary-blue);
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    margin: 5px 5px 0 -40px;
-  } */
-}
-
 @media screen and (min-width: 64em) and (max-width: 73.124em) {
   header {
     display: flex;
@@ -619,7 +490,6 @@ footer a {
     top: 0;
     transition: all 0.5s;
     width: inherit;
-    padding: 0 40px 0 40px;
   }
 
   .search-bar input {
@@ -809,7 +679,6 @@ footer a {
     top: 0;
     transition: all 0.5s;
     width: inherit;
-    padding: 0 40px 0 40px;
   }
 
   .search-and-login {
@@ -1093,7 +962,6 @@ footer a {
     top: 0;
     transition: all 0.5s;
     width: inherit;
-    padding: 0 40px 0 40px;
   }
 
   .search-and-login {
@@ -1387,7 +1255,6 @@ footer a {
     top: 0;
     transition: all 0.5s;
     width: inherit;
-    padding: 0 40px 0 40px;
   }
 
   .search-and-login {

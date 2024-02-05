@@ -247,10 +247,51 @@ main {
     margin-bottom: 30px;
     font-size: 12px;
   }
+
+  .poster-wrapper {
+    position: relative;
+    width: inherit;
+  }
+
+  .poster-flip {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(180deg);
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 300ms linear;
+    width: inherit;
+  }
+  .film-poster:hover .poster-flip {
+    transform: rotateY(0);
+    opacity: 1;
+    width: inherit;
+  }
+
+  .poster-flip a.detail-btn {
+    background-color: var(--fifth-blue);
+    width: inherit;
+    font-size: 15px;
+  }
+
+  .poster-flip .buy-now-btn {
+    background-color: #382741;
+    width: inherit;
+    font-size: 15px;
+  }
+  .poster-flip a img {
+    width: 30px;
+    display: none;
+  }
 }
 
 /* -- mobile --*/
-@media screen and (max-width: 46.24em) {
+@media screen and (max-width: 35.625em) {
   .container,
   .film-grid {
     width: inherit;
@@ -305,5 +346,145 @@ main {
     align-items: center;
     gap: 10px;
     margin-top: -70px;
+  }
+
+  .poster-wrapper {
+    position: relative;
+    width: inherit;
+  }
+
+  .poster-flip {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(180deg);
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 300ms linear;
+    width: inherit;
+  }
+  .film-poster:hover .poster-flip {
+    transform: rotateY(0);
+    opacity: 1;
+    width: inherit;
+  }
+
+  .poster-flip a.detail-btn {
+    background-color: var(--fifth-blue);
+    width: inherit;
+    font-size: 15px;
+  }
+
+  .poster-flip .buy-now-btn {
+    background-color: #382741;
+    width: inherit;
+    font-size: 15px;
+  }
+  .poster-flip a img {
+    width: 30px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 35.624em) and (max-width: 46.24em) {
+  .container,
+  .film-grid {
+    width: inherit;
+  }
+
+  .film-grid {
+    box-sizing: border-box;
+    background-color: rgb(11, 11, 11, 80%);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* column-gap: 20px; */
+    gap: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-size: 10px;
+  }
+
+  .head-title {
+    display: flex;
+    transform: translateY(15px);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .head-title-item {
+    padding: 0 8px;
+    background-color: var(--fifth-blue);
+    min-width: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 9px;
+    transform: skew(-15deg);
+  }
+
+  .head-title2 {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -70px;
+  }
+
+  .poster-wrapper {
+    position: relative;
+    width: inherit;
+  }
+
+  .poster-flip {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(180deg);
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    transition: all 300ms linear;
+    width: inherit;
+  }
+  .film-poster:hover .poster-flip {
+    transform: rotateY(0);
+    opacity: 1;
+    width: inherit;
+  }
+
+  .poster-flip a.detail-btn {
+    background-color: var(--fifth-blue);
+    width: inherit;
+    font-size: 15px;
+  }
+
+  .poster-flip .buy-now-btn {
+    background-color: #382741;
+    width: inherit;
+    font-size: 15px;
+  }
+  .poster-flip a img {
+    width: 30px;
+    display: none;
   }
 }

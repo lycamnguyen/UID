@@ -35,6 +35,11 @@ main,
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  width: inherit;
+}
+
+.container {
+  width: 100%;
 }
 .banner {
   width: 100%;
@@ -428,6 +433,7 @@ hr {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  width: inherit;
 }
 .phimdangchieu {
   display: flex;
@@ -553,4 +559,470 @@ textarea {
   color: white;
   font-size: 16px;
   resize: none;
+}
+
+.film-poster {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+}
+
+/* -- pc --*/
+@media screen and (min-width: 73.125em) and (max-width: 77.875em) {
+}
+
+@media screen and (min-width: 64em) and (max-width: 73.124em) {
+  .inner-wrapper {
+    display: flex;
+    color: white;
+    gap: 50px;
+    align-items: flex-start;
+    width: inherit;
+  }
+
+  #datve {
+    scroll-margin-top: 160px;
+    width: inherit;
+  }
+
+  .abs-content .box-banvengay {
+    padding: 10px;
+    color: white;
+  }
+
+  .box-banvengay {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .lichchieu {
+    width: inherit;
+  }
+  .dienvien {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+  }
+  .play-btn {
+    height: 80px;
+    width: 80px;
+    transform: translateY(-250px);
+    background-color: var(--fourth-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+}
+
+/* -- tablet -- */
+@media screen and (min-width: 59.025em) and (max-width: 63.99em) {
+  .inner-wrapper {
+    display: flex;
+    color: white;
+    gap: 50px;
+    align-items: flex-start;
+    width: inherit;
+  }
+
+  #datve {
+    scroll-margin-top: 160px;
+    width: inherit;
+  }
+
+  .abs-content .box-banvengay {
+    padding: 10px;
+    color: white;
+  }
+
+  .box-banvengay {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .lichchieu {
+    width: inherit;
+  }
+  .dienvien {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+  }
+  .play-btn {
+    height: 80px;
+    width: 80px;
+    transform: translateY(-250px);
+    background-color: var(--fourth-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 46.25em) and (max-width: 59em) {
+  .inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10%;
+    align-items: flex-start;
+    width: inherit;
+    text-align: center;
+  }
+
+  .poster-film {
+    border: 4px solid var(--yellow);
+    width: 40%;
+    margin: 0 0 0 30%;
+  }
+
+  .poster-film img {
+    width: 100%;
+  }
+
+  .posterfilm-box {
+    display: flex;
+    gap: 20px;
+    margin-left: 40%;
+  }
+
+  .danhgia_poster,
+  .starscore,
+  .starscore-canhan {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 15%;
+  }
+
+  .dienvien {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+  }
+
+  .dv_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+  }
+
+  .dv-img-item > img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+  }
+
+  #datve {
+    scroll-margin-top: 160px;
+    margin-top: 50px;
+  }
+
+  .gioithieu {
+    max-width: inherit;
+    margin-top: 20%;
+  }
+
+  .giothieu-box {
+    position: relative;
+    width: inherit;
+  }
+
+  .giothieu-box img {
+    display: block;
+    width: 100%;
+    display: none;
+  }
+
+  .abs-content {
+    position: relative;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .abs-content .gioithieu-box-content,
+  .abs-content .box-banvengay {
+    padding: 1%;
+    color: white;
+    background-color: var(--primary-blue);
+    width: 99%;
+  }
+
+  .inner-wrapper,
+  .gioithieu,
+  .lichchieu,
+  .danhgia-phimdangchieu {
+    width: inherit;
+  }
+
+  .lichchieubox {
+    background-color: var(--primary-blue);
+  }
+
+  .lichieu-homnay {
+    padding: 10px 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    height: auto;
+  }
+
+  .danhgia-phimdangchieu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: inherit;
+  }
+
+  .phimdangchieu {
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    gap: 30px;
+    width: inherit;
+  }
+
+  .phimdangchieu-poster {
+    width: 50%;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  .danhgia-content {
+    background-color: var(--primary-blue);
+    border-radius: 5px;
+    padding-bottom: 20px;
+    width: inherit;
+  }
+
+  .danhgia {
+    width: 100%;
+  }
+
+  .star-rank {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3%;
+    /* justify-content: space-between; */
+  }
+
+  .film-poster {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    text-align: center;
+  }
+
+  .play-btn {
+    height: 80px;
+    width: 80px;
+    transform: translateY(50px);
+    background-color: var(--fourth-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 99;
+    opacity: 0.8;
+  }
+
+  .dv-img-item {
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+/* -- mobile --*/
+@media screen and (max-width: 46.24em) {
+  .inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 10%;
+    align-items: flex-start;
+    width: inherit;
+    text-align: center;
+  }
+
+  .poster-film {
+    border: 4px solid var(--yellow);
+    width: 40%;
+    margin: 0 0 0 30%;
+  }
+
+  .poster-film img {
+    width: 100%;
+  }
+
+  .posterfilm-box {
+    display: flex;
+    gap: 20px;
+    margin-left: 35%;
+  }
+
+  .dienvien {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+  }
+
+  .dv_img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+  }
+
+  .dv-img-item > img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+  }
+
+  .gioithieu {
+    max-width: inherit;
+    margin-top: 20%;
+  }
+
+  .giothieu-box {
+    position: relative;
+    width: inherit;
+  }
+
+  .giothieu-box img {
+    display: block;
+    width: 100%;
+    display: none;
+  }
+
+  .abs-content {
+    position: relative;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .abs-content .gioithieu-box-content,
+  .abs-content .box-banvengay {
+    padding: 1%;
+    color: white;
+    background-color: var(--primary-blue);
+    width: 99%;
+  }
+
+  .inner-wrapper,
+  .gioithieu,
+  .lichchieu,
+  .danhgia-phimdangchieu {
+    width: inherit;
+  }
+
+  .lichchieubox {
+    background-color: var(--primary-blue);
+  }
+
+  .lichieu-homnay {
+    padding: 10px 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: auto;
+  }
+
+  .danhgia-phimdangchieu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    width: inherit;
+  }
+
+  .phimdangchieu {
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    gap: 30px;
+    width: inherit;
+  }
+
+  .phimdangchieu-poster {
+    width: 50%;
+    height: inherit;
+    object-fit: cover;
+  }
+
+  .danhgia-content {
+    background-color: var(--primary-blue);
+    border-radius: 5px;
+    padding-bottom: 20px;
+    width: inherit;
+  }
+
+  .danhgia {
+    width: 100%;
+  }
+
+  .star-rank {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3%;
+    /* justify-content: space-between; */
+  }
+
+  .film-poster {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    text-align: center;
+  }
+
+  .play-btn {
+    height: 80px;
+    width: 80px;
+    transform: translateY(50px);
+    background-color: var(--fourth-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    z-index: 99;
+    opacity: 0.8;
+  }
+
+  .dv-img-item {
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+  }
 }
