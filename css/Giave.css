@@ -122,7 +122,6 @@ main {
     background-color: rgb(237, 227, 227);
     width: var(--content-width);
     border-radius: 5px;
-    width: inherit;
     gap: 60px;
   }
 }

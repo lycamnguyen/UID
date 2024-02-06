@@ -8,12 +8,9 @@
   transform: rotate(-30deg);
 }
 
-img {
-  width: 100%;
-}
-
 .container {
   justify-content: center;
+  text-align: center;
 }
 /* -- pc --*/
 @media screen and (min-width: 64em) and (max-width: 73.124em) {
@@ -31,6 +28,9 @@ img {
     display: none;
     transform: rotate(-30deg);
   }
+  img {
+    width: 100%;
+  }
 }
 
 /* -- tablet -- */
@@ -38,16 +38,15 @@ img {
   .container,
   .film-grid {
     width: inherit;
-
-    .dangkytv {
-      width: 100%;
-      margin-left: 15px;
-      margin-top: 60px;
-      height: 10%;
-      position: absolute;
-      display: none;
-      transform: rotate(-30deg);
-    }
+  }
+  .dangkytv {
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 60px;
+    height: 10%;
+    position: absolute;
+    display: none;
+    transform: rotate(-30deg);
   }
 }
 
@@ -66,11 +65,13 @@ img {
     display: none;
     transform: rotate(-30deg);
   }
+  img {
+    width: 100%;
+  }
 }
 
 /* -- mobile --*/
 @media screen and (max-width: 46.24em) {
-  .container,
   .film-grid {
     width: inherit;
   }
@@ -83,5 +84,9 @@ img {
     position: absolute;
     display: none;
     transform: rotate(-30deg);
+  }
+
+  img {
+    width: 100%;
   }
 }
